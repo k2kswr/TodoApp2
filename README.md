@@ -1,32 +1,70 @@
-# React + TypeScript + Vite
+# Todo App
+React、TypeScript、Viteを使用して開発したTodo管理アプリです。
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## 概要
+Todoの登録、編集、削除、完了状態の変更などを行うことができます。
+ReactとTypeScriptを使用したフロントエンド開発の学習および実践を目的として、個人で開発しています。
 
-Currently, two official plugins are available:
+## 使用技術
+* React
+* TypeScript
+* Vite
+* HTML
+* CSS
+* Git
+* GitHub
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 機能
+* Todoの一覧表示
+* Todoの追加
+* Todoの編集
+* Todoの削除
+* Todoの完了・未完了の切り替え
 
-## React Compiler
+## デモ
+以下のURLから実際にアプリを操作できます。
+※デプロイ後にURLを記載
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## 起動方法
+### 1. リポジトリをクローン
+```bash
+git clone https://github.com/k2kswr/TodoApp2.git
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### 2. プロジェクトディレクトリへ移動
+
+```bash
+cd TodoApp2
+```
+
+### 3. パッケージをインストール
+
+```bash
+pnpm install
+```
+
+### 4. 開発サーバーを起動
+
+```bash
+pnpm dev
+```
+
+起動後、ターミナルに表示されたURLにアクセスしてください。
+
+## ディレクトリ構成
+
+```text
+TodoApp2/
+├── src/
+│   ├── components/
+│   ├── App.tsx
+│   └── main.tsx
+├── public/
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
+
+## 開発目的
+React、TypeScript、Viteを使用したWebアプリケーション開発の理解を深めることを目的として開発しました。
+今後も機能追加やUIの改善を行い、継続的にアプリケーションを改善していく予定です。
